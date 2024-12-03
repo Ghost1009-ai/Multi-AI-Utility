@@ -2,7 +2,6 @@ import streamlit as st
 from anime import anime_page
 from home import home_page
 from image_gen import flux_lora_page
-from object_detect import detection_page
 from spanish_translator import translation_page
 from speech_recog import speech_to_text_page
 # Import your class from the file
@@ -45,10 +44,6 @@ def main():
         st.markdown('<h1 class="big-font">Image Generation</h1>', unsafe_allow_html=True)
         flux_lora_page()
 
-
-    elif page == "Object detection":
-        st.markdown('<h1 class="big-font">Object detection</h1>', unsafe_allow_html=True)
-        detection_page()
 
     elif page == "Spanish Translator":
         st.markdown('<h1 class="big-font">Spanish Translator</h1>', unsafe_allow_html=True)
