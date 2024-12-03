@@ -1,4 +1,4 @@
-pip install sounddevice
+
 import streamlit as st
 import requests
 import sounddevice as sd
